@@ -1,0 +1,25 @@
+
+<ion-view view-title="Quiz">
+  <ion-content class="padding" ng-init="init()">
+
+   <ion-item style = "text-align: center;">
+     <b>{{randomcard.word}}</b>
+   </ion-item>
+    <ion-radio ng-repeat="answer in answers "
+               ng-value="answer"
+               ng-model="myanswer.my">
+      <p>{{ answer }}</p>
+
+    </ion-radio>
+
+    <button class="sendbutton " style="margin-top: 20%;">
+      <h3>score : {{score}} / {{numberOfWords}}</h3>
+    </button>
+
+    <button class="sendbutton" style="margin-top: 20%;" ng-click="nextplay()">next</button>
+
+
+
+    <div>my answer : {{myanswer.my}} </div>
+
+</ion-view>

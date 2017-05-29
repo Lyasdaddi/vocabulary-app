@@ -1,0 +1,17 @@
+<ion-view view-title="Add new Word">
+  <ion-content>
+
+    <label class="item item-input">
+      <i class="icon  ion-document-text placeholder-icon-large "></i>
+      <input type="text" placeholder="Word" ng-model="card.word ">
+    </label>
+
+    <label class="item item-input">
+      <i class="icon ion-document-text placeholder-icon-large"></i>
+      <input type="text" placeholder="the Word meaning" ng-model="card.meaning">
+    </label>
+
+    <button class="sendbutton" style="margin-top: 20%;" ng-click="addWord()">add</button>
+
+  </ion-content>
+</ion-view>

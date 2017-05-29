@@ -1,0 +1,10 @@
+{
+  "appId": "hw1quiz",
+  "apiKey": "38350d0d1bc77bb44174c93c9a260d7425cfae533dd5b52c64a887368bc23b56",
+  "public": "./",
+  "ignore": [
+    "stamplay.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}

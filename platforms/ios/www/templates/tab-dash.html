@@ -1,0 +1,47 @@
+<!--<ion-content class="padding">-->
+<!--<h2>Language Quiz !</h2>-->
+
+<!--<td-cards>-->
+<!--<td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)" on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)" class="card-{{$index}}">-->
+<!--<div class="image" ng-controller="CardCtrl">-->
+<!--<div class="no-text">NOPE</div>-->
+<!--&lt;!&ndash;<img ng-src="{{card.image}}">&ndash;&gt;-->
+<!--<p><strong>{{card.word}}</strong></p>-->
+<!--<p>{{card.meaning}}</p>-->
+<!--<div class="yes-text">YES</div>-->
+<!--</div>-->
+<!--</td-card>-->
+<!--</td-cards>-->
+
+<!--</ion-content>-->
+
+<ion-view view-title="Training">
+  <ion-pane ng-init="init()">
+    <td-cards>
+      <td-card ng-repeat="card in cards " on-destroy="cardDestroyed($index)" on-swipe-left="cardSwipedLeft($index)"
+               on-swipe-right="cardSwipedRight($index)" on-partial-swipe="cardPartialSwipe(amt)"
+               class="card-{{$index}}">
+        <div class="image" >
+          <ion-card>
+            <div class="no-text">NOPE</div>
+            <!--<img ng-src="{{card.image}}">-->
+            <ion-item><strong>{{card.word}}</strong></ion-item>
+            <p style="padding: 5%"> <strong>meaning :</strong> <br> {{card.meaning}}</p>
+            <div class="yes-text">LIKE</div>
+          </ion-card>
+
+        </div>
+      </td-card>
+    </td-cards>
+
+
+    <div class="row">
+
+      <div class=" col" style ="display:block;margin-top: 5%; padding-bottom: 20%;padding-top: 10%"> <b> yes {{knownword}} </b></div>
+
+      <div calss="col"  style ="display : block;margin-top: 5%; padding-bottom: 20%;padding-top: 10%"> <b> no {{neverseen}}</b></div>
+    </div>
+
+
+  </ion-pane>
+</ion-view>
